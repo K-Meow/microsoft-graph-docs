@@ -2596,6 +2596,26 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ---
 
+## Topic permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _Topic.Read.All_ | Read topic items | Allows the app to read topics data on behalf of the signed-in user. | Yes | No |
+
+### Remarks
+
+Topic permissions are valid only on work or school accounts.
+
+### Example usage
+
+#### Delegated
+
+* _Topic.Read.All_: Access topics from the [search API](/graph/api/resources/search-api-overview) (`POST /search/query`).
+
+---
+
 ## Threat assessment permissions
 
 #### Delegated permissions
